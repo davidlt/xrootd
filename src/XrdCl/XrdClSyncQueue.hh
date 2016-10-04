@@ -88,7 +88,7 @@ namespace XrdCl
         pSem = new Semaphore(0);
       }
 
-    private:
+    protected:
       std::queue<Item>  pQueue;
       XrdSysMutex       pMutex;
       Semaphore        *pSem;
